@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-sm-12">
+        <li
+            class="list-group-item border-0">
+            <div class="row mb-1">
+                <a [routerLink]= "['/surveys', survey.id, 'result']"><h4 class="text-primary mr-2">{{survey.title}}</h4></a>
+                <button (click)="onTake()" class="btn-sm btn-info">Take Survey</button>
+            </div>
+            <div class="row">
+                <p>{{survey.purpose}}</p>
+            </div>
+        </li>
+    </div>
+</div>
